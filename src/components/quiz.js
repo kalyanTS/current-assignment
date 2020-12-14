@@ -224,7 +224,7 @@ const Quiz = () => {
                         <Grid item xs={4}>
                           <Button
                             onClick={() => {
-                              if (!state[stepNo])
+                              if (state[stepNo] === null)
                                 return window.alert(
                                   "Choose an option to check"
                                 );
